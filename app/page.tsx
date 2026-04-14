@@ -357,7 +357,10 @@ export default function Home() {
       {/* ── FOOTER ──────────────────────────────────────────────── */}
       <footer className="footer">
         <span>DA SUITE &nbsp;·&nbsp; dasuite.mov</span>
-        <span>Maria v. Heland &nbsp;·&nbsp; 2026</span>
+        <span style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
+          <a href="/legal" style={{ color: 'inherit', textDecoration: 'none', opacity: 0.6 }}>Legal &amp; Privacy</a>
+          <span>Maria v. Heland &nbsp;·&nbsp; 2026</span>
+        </span>
       </footer>
     </>
   );
