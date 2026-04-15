@@ -72,24 +72,29 @@ export default function Home() {
           {[
             {
               name: "MINDA", domain: "minda.mov", anchor: "#minda",
-              desc: "Contracts, obligations & people. Everything promised. Nothing missed.",
+              hook: "reminds you of every promise you made.",
+              desc: "Every clause, every deadline, every obligation — she never forgets.",
             },
             {
               name: "AYDA", domain: "ayda.mov", anchor: "#ayda",
-              desc: "Budgets, financing & tax incentives across 31 European territories.",
+              hook: "aids your budget across 31 territories.",
+              desc: "Budgets, financing, and incentives across 31 European territories.",
             },
             {
               name: "GUIDA", domain: "guida.mov", anchor: "#guida",
-              desc: "Co-production intelligence. 55 treaties. Instant compliance.",
+              hook: "guides before you sign.",
+              desc: "55 treaties. Every compliance rule. She knows them so you don't have to.",
             },
             {
               name: "LAMDA", domain: "lamda.mov", anchor: "#lamda",
-              desc: "Story reference engine. Any script mapped to cinema history in seconds.",
+              hook: "knows every story ever told.",
+              desc: "Map any script to cinema history. Find the film that solved your problem.",
             },
           ].map((app) => (
             <a key={app.name} href={app.anchor} className="app-card" style={{ textDecoration: "none" }}>
               <div className="app-card-name">{app.name}</div>
               <div className="app-card-domain">{app.domain}</div>
+              <div className="app-card-hook" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.15rem", fontStyle: "italic", color: "var(--text)", marginBottom: "0.6rem", lineHeight: 1.4 }}>{app.hook}</div>
               <div className="app-card-desc">{app.desc}</div>
             </a>
           ))}
